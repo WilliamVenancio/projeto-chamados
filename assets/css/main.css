@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 8px;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-left: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    padding: 50px 70px;
+    grid-gap: 30px;
+}
+
+.left-box {
+    position: relative;
+    right: 10px; 
+}
+
+.right-box {
+    position: relative;
+    left: 10px; 
+    top: -3px; 
+}
+
+.form-header {
+    position: relative;
+    bottom: 20px;
+}
+
+.form-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.form-header h1::before {
+	position: absolute;
+	content: '';
+	width: 64%;
+	background: linear-gradient(120deg, rgb(0, 32, 195), rgb(39, 115, 255));
+	height: 3px;
+	bottom: -5px;
+	border-radius: 5px;
+}
+
+.inputsBox {
+	display: flex;
+	align-items: center;
+	grid-gap: 15px;
+	padding: 3px;
+	cursor: text;
+	border-bottom: 1px solid #153cff;
+}
+
+.inputsBox label {
+	font-size: 14px;
+	color: #000000;
+}
+
+.inputsBox input {
+	border: none;
+	background-color: transparent;
+	width: 260px;
+	font-size: 15px;
+	padding: 0px 5px;
+}
+
+.inputsBox input:focus {
+	outline: none;
+}
+
+.inputsBox i {
+    color: #000000;
+}
+
+.btn-submit  {
+    border: none;
+	background: linear-gradient(45deg, rgb(0, 32, 195), rgb(39, 115, 255));
+	color: #ffffff;
+    width: 450px;
+	padding: 7px;
+	font-size: 18px;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-submit:hover {
+    transform: scale(1.03);
+}
